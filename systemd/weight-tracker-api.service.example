@@ -1,0 +1,19 @@
+[Unit]
+Description=Weight Tracker REST API
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/.local/share/weight-tracker
+EnvironmentFile=-%h/.config/weight-tracker/api.env
+ExecStart=%h/.local/share/weight-tracker/weight_tracker serve 127.0.0.1 8765
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%h/.local/share/weight-tracker
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,25 @@
+# Runtime database files
+*.db
+*.db-wal
+*.db-shm
+
+# Backups
+*.bak
+*.bak-*
+*.backup
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+
+# Local exports
+*export*.json
+
+# Editor / OS junk
+.vscode/
+.idea/
+.DS_Store

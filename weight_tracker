@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+SCRIPT_PATH=$(readlink -f -- "$0" 2>/dev/null || printf '%s\n' "$0")
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$SCRIPT_PATH")" && pwd)
+exec /usr/bin/python3 "$SCRIPT_DIR/tools/tracker.py" "$@"
