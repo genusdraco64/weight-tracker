@@ -15,3 +15,9 @@ The built-in HTTP server does not provide TLS. Do not expose it directly to the 
 ## Vulnerability reports
 
 Include application version, reproduction steps, and sanitized output. Remove names, IDs, meals, weights, notes, file paths that reveal identities, and all other personal data.
+
+## Reporting a security vulnerability
+
+Please do not report security vulnerabilities through public GitHub Issues.
+
+Use GitHub's private vulnerability reporting feature on this repository so security details can be reviewed privately before public disclosure.
